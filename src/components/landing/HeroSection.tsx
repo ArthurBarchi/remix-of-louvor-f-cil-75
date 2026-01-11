@@ -37,7 +37,7 @@ const HeroSection = () => {
         <div className="text-center mb-6">
           <p className="text-2xl font-black text-foreground">
             TUDO POR APENAS{" "}
-            <span className="text-gradient text-4xl">R$14,90!</span>
+            <span className="text-gradient text-4xl">R$ 10,00</span>
           </p>
         </div>
 
