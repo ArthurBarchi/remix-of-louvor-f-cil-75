@@ -1,5 +1,5 @@
 import { Shield, Lock, CreditCard } from "lucide-react";
-import heroImage from "@/assets/hero-playbacks.jpg";
+import heroImage from "@/assets/hero-playbacks.png";
 
 const HeroSection = () => {
   return (
@@ -8,16 +8,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent pointer-events-none" />
       
       <div className="container max-w-lg mx-auto relative">
-        {/* Hero Image */}
-        <div className="mb-6 animate-fade-in">
-          <img 
-            src={heroImage} 
-            alt="Playbacks Gospel - Mais de 1500 hinos" 
-            className="w-full rounded-2xl shadow-lg"
-          />
-        </div>
-
-        {/* Main Headline */}
+        {/* Main Headline - Now BEFORE the image */}
         <div className="text-center mb-6">
           <h1 className="text-3xl md:text-4xl font-black text-foreground leading-tight mb-2">
             1.500 Playbacks Para
@@ -28,6 +19,15 @@ const HeroSection = () => {
           <p className="text-sm text-muted-foreground font-medium uppercase tracking-wide">
             Produto principal - Pacote de Playbacks Gospel
           </p>
+        </div>
+
+        {/* Hero Image - Now AFTER the headline */}
+        <div className="mb-6 animate-fade-in">
+          <img 
+            src={heroImage} 
+            alt="Playbacks Gospel - Mais de 1500 hinos" 
+            className="w-full rounded-2xl"
+          />
         </div>
 
         {/* Value Proposition */}
