@@ -16,9 +16,6 @@ const HeroSection = () => {
             <span className="text-gradient">Louvar Na Igreja</span>
           </h1>
           
-          <p className="text-sm text-muted-foreground font-medium uppercase tracking-wide">
-            Produto principal - Pacote de Playbacks Gospel
-          </p>
         </div>
 
         {/* Hero Image - Now AFTER the headline */}
