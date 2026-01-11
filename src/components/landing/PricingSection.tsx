@@ -63,10 +63,10 @@ const PricingSection = () => {
                 De R$ 54,90 por apenas:
               </p>
               <p className="text-4xl font-black text-foreground">
-                R$ 14,90
+                R$ 10,00
               </p>
               <span className="inline-block bg-success/10 text-success text-xs font-bold px-3 py-1 rounded-full">
-                73% DE DESCONTO
+                82% DE DESCONTO
               </span>
             </div>
 
@@ -128,10 +128,10 @@ const PricingSection = () => {
                 De R$ 137,90 por apenas:
               </p>
               <p className="text-5xl font-black text-gradient">
-                R$ 37,90
+                R$ 27,00
               </p>
               <span className="inline-block bg-primary/10 text-primary text-xs font-bold px-3 py-1 rounded-full mt-2">
-                ECONOMIZE R$ 100,00 (72% OFF)
+                ECONOMIZE R$ 110,90 (80% OFF)
               </span>
             </div>
 

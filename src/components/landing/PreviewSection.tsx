@@ -1,4 +1,5 @@
 import { Download, Usb, Church, Music, Disc, Users } from "lucide-react";
+import mockupDevices from "@/assets/mockup-devices.png";
 
 const PreviewSection = () => {
   const stats = [
@@ -24,6 +25,15 @@ const PreviewSection = () => {
           <p className="text-2xl font-black text-gradient">
             RECEBE NA PRÁTICA
           </p>
+        </div>
+
+        {/* Mockup Image */}
+        <div className="mb-8">
+          <img 
+            src={mockupDevices} 
+            alt="Playbacks em múltiplos dispositivos" 
+            className="w-full rounded-xl"
+          />
         </div>
 
         {/* Stats */}
