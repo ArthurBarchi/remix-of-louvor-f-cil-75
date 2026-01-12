@@ -41,7 +41,7 @@ const PricingSection = () => {
         {/* Pricing Cards */}
         <div className="space-y-6">
           {/* Basic Package */}
-          <div className="card-elevated p-6">
+          <div className="bg-background rounded-2xl p-6 border-2 border-success">
             <div className="text-center mb-6">
               <h3 className="text-xl font-black text-foreground">
                 Pacote Básico
@@ -60,19 +60,11 @@ const PricingSection = () => {
             <ul className="space-y-3 mb-6">
               <li className="flex items-center gap-3 text-sm text-foreground">
                 <Check className="w-5 h-5 text-success flex-shrink-0" />
-                1.500 músicas gospel
+                1.500 Playbacks Gospel
               </li>
               <li className="flex items-center gap-3 text-sm text-foreground">
                 <Check className="w-5 h-5 text-success flex-shrink-0" />
-                Download imediato após pagamento
-              </li>
-              <li className="flex items-center gap-3 text-sm text-foreground">
-                <Check className="w-5 h-5 text-success flex-shrink-0" />
-                Garantia de 7 dias (seu dinheiro de volta)
-              </li>
-              <li className="flex items-center gap-3 text-sm text-foreground">
-                <Check className="w-5 h-5 text-success flex-shrink-0" />
-                Suporte por e-mail
+                Acesso imediato após o pagamento
               </li>
             </ul>
 
@@ -115,7 +107,7 @@ const PricingSection = () => {
             <ul className="space-y-3 mb-6">
               <li className="flex items-center gap-3 text-sm text-foreground">
                 <Check className="w-5 h-5 text-success flex-shrink-0" />
-                2.500 músicas gospel
+                2.500 Playbacks Gospel
               </li>
               <li className="flex items-center gap-3 text-sm text-foreground">
                 <Check className="w-5 h-5 text-success flex-shrink-0" />
