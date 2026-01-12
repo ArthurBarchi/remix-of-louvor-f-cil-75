@@ -104,40 +104,55 @@ const PricingSection = () => {
               </p>
             </div>
 
-            <ul className="space-y-3 mb-6">
-              <li className="flex items-center gap-3 text-sm text-foreground">
-                <Check className="w-5 h-5 text-success flex-shrink-0" />
-                2.500 Playbacks Gospel
-              </li>
-              <li className="flex items-center gap-3 text-sm text-foreground">
-                <Check className="w-5 h-5 text-success flex-shrink-0" />
-                Download imediato após pagamento
-              </li>
-              <li className="flex items-center gap-3 text-sm text-foreground">
-                <Check className="w-5 h-5 text-success flex-shrink-0" />
-                Garantia de 7 dias (seu dinheiro de volta)
-              </li>
-              <li className="flex items-center gap-3 text-sm text-foreground">
-                <Check className="w-5 h-5 text-success flex-shrink-0" />
-                Suporte por e-mail
-              </li>
-              <li className="flex items-center gap-3 text-sm text-foreground font-semibold">
-                <Gift className="w-5 h-5 text-primary flex-shrink-0" />
-                + Ebook "A Voz do Louvor"
-              </li>
-              <li className="flex items-center gap-3 text-sm text-foreground font-semibold">
-                <Gift className="w-5 h-5 text-primary flex-shrink-0" />
-                + Multitracks Gospel
-              </li>
-              <li className="flex items-center gap-3 text-sm text-foreground font-semibold">
-                <Gift className="w-5 h-5 text-primary flex-shrink-0" />
-                + 5.000 Partituras Gospel
-              </li>
-              <li className="flex items-center gap-3 text-sm text-foreground font-semibold">
-                <Gift className="w-5 h-5 text-primary flex-shrink-0" />
-                + Músicas de Fundo para Oração
-              </li>
-            </ul>
+            {/* Tudo do Pacote Básico */}
+            <div className="bg-success/10 border border-success/30 rounded-xl py-3 px-4 mb-4">
+              <p className="text-center text-success font-bold text-sm">
+                TUDO DO PACOTE BÁSICO +
+              </p>
+            </div>
+
+            {/* Bônus Cards */}
+            <div className="space-y-3 mb-6">
+              <div className="bg-primary/5 border border-primary/20 rounded-xl p-4">
+                <div className="flex items-start gap-3">
+                  <Gift className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                  <div>
+                    <p className="text-xs font-bold text-primary">BÔNUS 1</p>
+                    <p className="text-sm font-semibold text-foreground">Ebook "A Voz do Louvor"</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-primary/5 border border-primary/20 rounded-xl p-4">
+                <div className="flex items-start gap-3">
+                  <Gift className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                  <div>
+                    <p className="text-xs font-bold text-primary">BÔNUS 2</p>
+                    <p className="text-sm font-semibold text-foreground">Multitracks Gospel</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-primary/5 border border-primary/20 rounded-xl p-4">
+                <div className="flex items-start gap-3">
+                  <Gift className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                  <div>
+                    <p className="text-xs font-bold text-primary">BÔNUS 3</p>
+                    <p className="text-sm font-semibold text-foreground">5.000 Partituras Gospel</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-primary/5 border border-primary/20 rounded-xl p-4">
+                <div className="flex items-start gap-3">
+                  <Gift className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                  <div>
+                    <p className="text-xs font-bold text-primary">BÔNUS 4</p>
+                    <p className="text-sm font-semibold text-foreground">Músicas de Fundo para Oração</p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <a 
               href="#" 
