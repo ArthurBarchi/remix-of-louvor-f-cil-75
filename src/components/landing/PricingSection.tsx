@@ -42,43 +42,49 @@ const PricingSection = () => {
         <div className="space-y-6">
           {/* Basic Package */}
           <div className="card-elevated p-6">
-            <div className="text-center mb-4">
-              <p className="text-xs font-bold text-muted-foreground uppercase tracking-wider">
-                PACOTE BÁSICO
-              </p>
-              <h3 className="text-lg font-black text-foreground">
-                1.500 Playbacks
+            <div className="text-center mb-6">
+              <h3 className="text-xl font-black text-foreground">
+                Pacote Básico
               </h3>
+              <p className="text-base text-destructive line-through font-semibold mt-2">
+                R$ 79,00
+              </p>
+              <p className="text-4xl font-black text-success mt-1">
+                R$ 10,00
+              </p>
+              <p className="text-sm text-muted-foreground mt-1">
+                Pagamento único
+              </p>
             </div>
 
-            <ul className="space-y-2 mb-6">
-              <li className="flex items-center gap-2 text-sm text-foreground">
-                <Check className="w-4 h-4 text-success" />
-                1.500 Playbacks Gospel
+            <ul className="space-y-3 mb-6">
+              <li className="flex items-center gap-3 text-sm text-foreground">
+                <Check className="w-5 h-5 text-success flex-shrink-0" />
+                1.500 músicas gospel
+              </li>
+              <li className="flex items-center gap-3 text-sm text-foreground">
+                <Check className="w-5 h-5 text-success flex-shrink-0" />
+                Download imediato após pagamento
+              </li>
+              <li className="flex items-center gap-3 text-sm text-foreground">
+                <Check className="w-5 h-5 text-success flex-shrink-0" />
+                Garantia de 7 dias (seu dinheiro de volta)
+              </li>
+              <li className="flex items-center gap-3 text-sm text-foreground">
+                <Check className="w-5 h-5 text-success flex-shrink-0" />
+                Suporte por e-mail
               </li>
             </ul>
 
-            <div className="text-center mb-4">
-              <p className="text-sm text-muted-foreground line-through">
-                De R$ 54,90 por apenas:
-              </p>
-              <p className="text-4xl font-black text-foreground">
-                R$ 10,00
-              </p>
-              <span className="inline-block bg-success/10 text-success text-xs font-bold px-3 py-1 rounded-full">
-                82% DE DESCONTO
-              </span>
-            </div>
-
             <a 
               href="#" 
-              className="block w-full py-3 px-6 text-center font-bold rounded-xl border-2 border-primary text-primary hover:bg-primary hover:text-white transition-all"
+              className="block w-full py-4 px-6 text-center font-bold text-white bg-success rounded-full hover:bg-success/90 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
-              QUERO ESSE
+              QUERO AGORA – R$ 10,00
             </a>
             
-            <p className="text-xs text-center text-muted-foreground mt-3">
-              ✓ Acesso imediato após a compra
+            <p className="text-xs text-center text-muted-foreground mt-4">
+              Pagamento 100% protegido
             </p>
           </div>
 
@@ -91,68 +97,66 @@ const PricingSection = () => {
               </span>
             </div>
 
-            <div className="text-center mb-4 pt-2">
-              <p className="text-xs font-bold text-primary uppercase tracking-wider">
-                PACOTE COMPLETO
-              </p>
-              <h3 className="text-lg font-black text-foreground">
-                2.500 Playbacks
+            <div className="text-center mb-6 pt-2">
+              <h3 className="text-xl font-black text-foreground">
+                Pacote Completo
               </h3>
+              <p className="text-base text-destructive line-through font-semibold mt-2">
+                R$ 137,90
+              </p>
+              <p className="text-4xl font-black text-success mt-1">
+                R$ 27,00
+              </p>
+              <p className="text-sm text-muted-foreground mt-1">
+                Pagamento único
+              </p>
             </div>
 
-            <ul className="space-y-2 mb-6">
-              <li className="flex items-center gap-2 text-sm text-foreground">
-                <Check className="w-4 h-4 text-success" />
-                2.500 Playbacks Gospel
+            <ul className="space-y-3 mb-6">
+              <li className="flex items-center gap-3 text-sm text-foreground">
+                <Check className="w-5 h-5 text-success flex-shrink-0" />
+                2.500 músicas gospel
               </li>
-              <li className="flex items-center gap-2 text-sm text-foreground">
-                <Gift className="w-4 h-4 text-primary" />
-                Ebook "A Voz do Louvor"
+              <li className="flex items-center gap-3 text-sm text-foreground">
+                <Check className="w-5 h-5 text-success flex-shrink-0" />
+                Download imediato após pagamento
               </li>
-              <li className="flex items-center gap-2 text-sm text-foreground">
-                <Gift className="w-4 h-4 text-primary" />
-                Multitracks Gospel
+              <li className="flex items-center gap-3 text-sm text-foreground">
+                <Check className="w-5 h-5 text-success flex-shrink-0" />
+                Garantia de 7 dias (seu dinheiro de volta)
               </li>
-              <li className="flex items-center gap-2 text-sm text-foreground">
-                <Gift className="w-4 h-4 text-primary" />
-                5.000 Partituras Gospel
+              <li className="flex items-center gap-3 text-sm text-foreground">
+                <Check className="w-5 h-5 text-success flex-shrink-0" />
+                Suporte por e-mail
               </li>
-              <li className="flex items-center gap-2 text-sm text-foreground">
-                <Gift className="w-4 h-4 text-primary" />
-                Músicas de Fundo para Oração
+              <li className="flex items-center gap-3 text-sm text-foreground font-semibold">
+                <Gift className="w-5 h-5 text-primary flex-shrink-0" />
+                + Ebook "A Voz do Louvor"
+              </li>
+              <li className="flex items-center gap-3 text-sm text-foreground font-semibold">
+                <Gift className="w-5 h-5 text-primary flex-shrink-0" />
+                + Multitracks Gospel
+              </li>
+              <li className="flex items-center gap-3 text-sm text-foreground font-semibold">
+                <Gift className="w-5 h-5 text-primary flex-shrink-0" />
+                + 5.000 Partituras Gospel
+              </li>
+              <li className="flex items-center gap-3 text-sm text-foreground font-semibold">
+                <Gift className="w-5 h-5 text-primary flex-shrink-0" />
+                + Músicas de Fundo para Oração
               </li>
             </ul>
 
-            <div className="text-center mb-4">
-              <p className="text-sm text-muted-foreground line-through">
-                De R$ 137,90 por apenas:
-              </p>
-              <p className="text-5xl font-black text-gradient">
-                R$ 27,00
-              </p>
-              <span className="inline-block bg-primary/10 text-primary text-xs font-bold px-3 py-1 rounded-full mt-2">
-                ECONOMIZE R$ 110,90 (80% OFF)
-              </span>
-            </div>
-
             <a 
               href="#" 
-              className="btn-gradient w-full flex items-center justify-center text-base"
+              className="block w-full py-4 px-6 text-center font-bold text-white bg-success rounded-full hover:bg-success/90 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
-              QUERO PACOTE COMPLETO
+              QUERO AGORA – R$ 27,00
             </a>
             
-            <div className="flex items-center justify-center gap-4 mt-4 text-xs text-muted-foreground">
-              <span className="flex items-center gap-1">
-                <Zap className="w-3 h-3" /> Acesso imediato
-              </span>
-              <span className="flex items-center gap-1">
-                <Lock className="w-3 h-3" /> 100% seguro
-              </span>
-              <span className="flex items-center gap-1">
-                <Shield className="w-3 h-3" /> 7 dias garantia
-              </span>
-            </div>
+            <p className="text-xs text-center text-muted-foreground mt-4">
+              Pagamento 100% protegido
+            </p>
           </div>
         </div>
 
