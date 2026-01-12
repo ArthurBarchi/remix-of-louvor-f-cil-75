@@ -1,4 +1,5 @@
 import { Star, Users, ThumbsUp, Award, MessageCircle } from "lucide-react";
+import whatsappTestimonials from "@/assets/whatsapp-testimonials.png";
 
 const TestimonialsSection = () => {
   const stats = [
@@ -22,6 +23,15 @@ const TestimonialsSection = () => {
           <p className="text-sm text-muted-foreground mt-2">
             Depoimentos de Ministérios Transformados
           </p>
+        </div>
+
+        {/* WhatsApp Testimonials Image */}
+        <div className="mb-8">
+          <img 
+            src={whatsappTestimonials} 
+            alt="Depoimentos de clientes satisfeitos no WhatsApp" 
+            className="w-full rounded-xl shadow-lg"
+          />
         </div>
 
         {/* Social Proof */}
