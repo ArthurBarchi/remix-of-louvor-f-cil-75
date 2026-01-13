@@ -7,6 +7,7 @@ import GuaranteeSection from "@/components/landing/GuaranteeSection";
 import StorySection from "@/components/landing/StorySection";
 import FAQSection from "@/components/landing/FAQSection";
 import FooterSection from "@/components/landing/FooterSection";
+import PurchaseNotification from "@/components/landing/PurchaseNotification";
 
 const Index = () => {
   return (
@@ -20,6 +21,7 @@ const Index = () => {
       <StorySection />
       <FAQSection />
       <FooterSection />
+      <PurchaseNotification />
     </main>
   );
 };
