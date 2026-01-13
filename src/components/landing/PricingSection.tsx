@@ -69,7 +69,9 @@ const PricingSection = () => {
             </ul>
 
             <a 
-              href="#" 
+              href="https://www.ggcheckout.com/checkout/v3/uda9p5CSRKXTcAwHsLvQ" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="block w-full py-4 px-6 text-center font-bold text-white bg-success rounded-full hover:bg-success/90 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               QUERO AGORA – R$ 10,00
@@ -155,7 +157,9 @@ const PricingSection = () => {
             </div>
 
             <a 
-              href="#" 
+              href="https://www.ggcheckout.com/checkout/v3/tkVEmLZIcs4BlAmdERb3" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="block w-full py-4 px-6 text-center font-bold text-white bg-success rounded-full hover:bg-success/90 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               QUERO AGORA – R$ 27,00
