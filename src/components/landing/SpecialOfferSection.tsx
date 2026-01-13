@@ -50,11 +50,11 @@ const SpecialOfferSection = () => {
           
           {/* Ebook Image */}
           <div className="flex justify-center mb-6">
-            <img 
-              src={bonusEbook} 
-              alt="Ebook Bônus" 
-              className="w-32 h-auto drop-shadow-lg"
-            />
+          <img 
+            src={bonusEbook} 
+            alt="Pacote de Bônus - Playbacks Gospel" 
+            className="w-full max-w-xs h-auto drop-shadow-lg"
+          />
           </div>
 
           {/* Bonuses List */}
