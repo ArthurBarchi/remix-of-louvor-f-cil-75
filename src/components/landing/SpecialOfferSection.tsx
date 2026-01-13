@@ -76,7 +76,7 @@ const SpecialOfferSection = () => {
         {/* CTA */}
         <a 
           href="#pricing" 
-          className="btn-gradient w-full flex items-center justify-center text-lg"
+          className="btn-gradient w-full flex items-center justify-center text-lg animate-stretch"
         >
           🔥 QUERO AGORA! 🔥
         </a>
