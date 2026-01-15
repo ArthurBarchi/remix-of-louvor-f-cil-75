@@ -1,5 +1,6 @@
 import { Shield, Lock, CreditCard } from "lucide-react";
 import heroImage from "@/assets/hero-playbacks.png";
+import CountdownTimer from "./CountdownTimer";
 
 const HeroSection = () => {
   return (
@@ -16,6 +17,10 @@ const HeroSection = () => {
             <span className="text-gradient">Louvar Na Igreja</span>
           </h1>
           
+          {/* Countdown Badge */}
+          <div className="mt-4">
+            <CountdownTimer variant="badge" />
+          </div>
         </div>
 
         {/* Hero Image - Now AFTER the headline */}
