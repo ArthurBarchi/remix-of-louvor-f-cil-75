@@ -1,5 +1,6 @@
 import { Gift, BookOpen, Music, FileText, Volume2 } from "lucide-react";
 import bonusEbook from "@/assets/bonus-ebook.png";
+import CountdownTimer from "./CountdownTimer";
 
 const SpecialOfferSection = () => {
   const bonuses = [
@@ -37,6 +38,9 @@ const SpecialOfferSection = () => {
             SOMENTE HOJE:
           </h2>
         </div>
+
+        {/* Full Countdown Timer */}
+        <CountdownTimer variant="full" />
 
         {/* Main Offer Card */}
         <div className="card-elevated p-6 mb-6">
