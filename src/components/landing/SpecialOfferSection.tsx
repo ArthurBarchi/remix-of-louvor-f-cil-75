@@ -42,7 +42,7 @@ const SpecialOfferSection = () => {
         <div className="card-elevated p-6 mb-6">
           <div className="flex items-center justify-center gap-2 mb-4">
             <Gift className="w-6 h-6 text-primary animate-pulse" />
-            <span className="text-xl font-black text-foreground">+2.500 Playbacks</span>
+            <span className="text-xl font-black text-foreground">Plano Completo</span>
           </div>
           <p className="text-center text-lg font-bold text-primary mb-4">
             +4 BÔNUS EXCLUSIVOS
