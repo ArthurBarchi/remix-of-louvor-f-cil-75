@@ -29,8 +29,8 @@ const HeroSection = () => {
 
         {/* Value Proposition */}
         <p className="text-center text-foreground text-lg font-black leading-relaxed mb-6">
-          <span className="text-destructive">CHEGA</span> de dor de cabeça baixando playbacks ruins do YouTube ou gastando com CD. Baixe{" "}
-          <span className="text-destructive">HOJE MESMO</span> direto pro pendrive, de forma <span className="text-destructive">SIMPLES</span> e <span className="text-destructive">PRÁTICA</span>.
+          CHEGA de dor de cabeça baixando playbacks ruins do YouTube ou gastando com CD. Baixe{" "}
+          HOJE MESMO direto pro pendrive, de forma SIMPLES e PRÁTICA.
         </p>
 
         {/* Price */}
