@@ -30,7 +30,7 @@ const HeroSection = () => {
         {/* Value Proposition */}
         <p className="text-center text-foreground text-lg font-black leading-relaxed mb-6">
           CHEGA de dor de cabeça baixando playbacks ruins do YouTube ou gastando com CD. Baixe{" "}
-          HOJE MESMO direto pro pendrive, de forma SIMPLES e PRÁTICA.
+          <span className="text-amber-500">HOJE MESMO</span> direto pro pendrive, de forma <span className="text-amber-500">SIMPLES</span> e <span className="text-amber-500">PRÁTICA</span>.
         </p>
 
         {/* Price */}
