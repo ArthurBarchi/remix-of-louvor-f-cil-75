@@ -76,17 +76,17 @@ const CountdownTimer = ({ variant = "badge" }: CountdownTimerProps) => {
 
       {/* Countdown Boxes */}
       <div className="flex items-center justify-center gap-3 mb-4">
-        <div className="bg-emerald-500 rounded-xl px-4 py-3 min-w-[70px] text-center">
+        <div className="bg-amber-500 rounded-xl px-4 py-3 min-w-[70px] text-center">
           <div className="text-2xl font-black text-white">{pad(timeLeft.hours)}</div>
           <div className="text-xs text-white/80 uppercase font-medium">Horas</div>
         </div>
         <span className="text-2xl font-bold text-foreground">:</span>
-        <div className="bg-emerald-500 rounded-xl px-4 py-3 min-w-[70px] text-center">
+        <div className="bg-amber-500 rounded-xl px-4 py-3 min-w-[70px] text-center">
           <div className="text-2xl font-black text-white">{pad(timeLeft.minutes)}</div>
           <div className="text-xs text-white/80 uppercase font-medium">Min</div>
         </div>
         <span className="text-2xl font-bold text-foreground">:</span>
-        <div className="bg-emerald-500 rounded-xl px-4 py-3 min-w-[70px] text-center">
+        <div className="bg-amber-500 rounded-xl px-4 py-3 min-w-[70px] text-center">
           <div className="text-2xl font-black text-white">{pad(timeLeft.seconds)}</div>
           <div className="text-xs text-white/80 uppercase font-medium">Seg</div>
         </div>
