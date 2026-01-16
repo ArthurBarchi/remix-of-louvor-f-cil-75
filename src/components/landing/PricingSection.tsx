@@ -39,16 +39,19 @@ const PricingSection = () => {
           
           {/* Scarcity Element */}
           <div className="bg-white/5 border border-amber-500/30 rounded-xl p-4 max-w-sm mx-auto">
-            <p className="text-sm font-bold text-white mb-2">
-              🔥 Restam apenas <span className="text-amber-500">10 vagas</span> para o produto essa semana
+            <p className="text-sm font-bold text-white mb-3">
+              Restam apenas <span className="text-amber-500">10 vagas</span> para o produto essa semana
             </p>
-            <div className="w-full bg-white/10 rounded-full h-3 overflow-hidden">
+            <div className="relative w-full bg-white/10 rounded-full h-5 overflow-hidden">
               <div 
                 className="bg-gradient-to-r from-amber-500 to-amber-400 h-full rounded-full transition-all duration-500"
                 style={{ width: '96.67%' }}
               />
+              <span className="absolute inset-0 flex items-center justify-center text-xs font-bold text-white drop-shadow-md">
+                97%
+              </span>
             </div>
-            <p className="text-xs text-muted-foreground mt-1.5">290 de 300 vagas preenchidas</p>
+            <p className="text-xs text-muted-foreground mt-2">290 de 300 vagas preenchidas</p>
           </div>
         </div>
 
