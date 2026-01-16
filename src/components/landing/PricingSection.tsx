@@ -33,9 +33,23 @@ const PricingSection = () => {
           <h2 className="text-2xl font-black text-white mb-1">
             TRANSFORME SUA
           </h2>
-          <p className="text-2xl font-black text-primary">
+          <p className="text-2xl font-black text-primary mb-4">
             ADORAÇÃO AGORA!
           </p>
+          
+          {/* Scarcity Element */}
+          <div className="bg-white/5 border border-amber-500/30 rounded-xl p-4 max-w-sm mx-auto">
+            <p className="text-sm font-bold text-white mb-2">
+              🔥 Restam apenas <span className="text-amber-500">10 vagas</span> para o produto essa semana
+            </p>
+            <div className="w-full bg-white/10 rounded-full h-3 overflow-hidden">
+              <div 
+                className="bg-gradient-to-r from-amber-500 to-amber-400 h-full rounded-full transition-all duration-500"
+                style={{ width: '96.67%' }}
+              />
+            </div>
+            <p className="text-xs text-muted-foreground mt-1.5">290 de 300 vagas preenchidas</p>
+          </div>
         </div>
 
         {/* Pricing Cards */}
