@@ -1,15 +1,7 @@
 import { Check, Star, Zap, Lock, Shield, Gift } from "lucide-react";
 import { useEffect, useState } from "react";
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-  DialogDescription,
-} from "@/components/ui/dialog";
 
 const PricingSection = () => {
-  const [showUpsellModal, setShowUpsellModal] = useState(false);
   const [timeLeft, setTimeLeft] = useState({
     hours: 1,
     minutes: 35,
@@ -33,83 +25,7 @@ const PricingSection = () => {
     return () => clearInterval(timer);
   }, []);
 
-  const handleBasicClick = (e: React.MouseEvent) => {
-    e.preventDefault();
-    setShowUpsellModal(true);
-  };
-
-  const handleContinueBasic = () => {
-    setShowUpsellModal(false);
-    window.open("https://www.ggcheckout.com/checkout/v3/uda9p5CSRKXTcAwHsLvQ", "_blank");
-  };
-
-  const handleUpgradePremium = () => {
-    setShowUpsellModal(false);
-    window.open("https://www.ggcheckout.com/checkout/v3/tkVEmLZIcs4BlAmdERb3", "_blank");
-  };
-
   return (
-    <>
-      {/* Upsell Modal */}
-      <Dialog open={showUpsellModal} onOpenChange={setShowUpsellModal}>
-        <DialogContent className="max-w-sm mx-auto bg-background border-2 border-primary/30 rounded-2xl p-6">
-          <DialogHeader className="text-center">
-            <DialogTitle className="text-2xl font-black text-foreground">
-              Espere! Oferta especial 🎉
-            </DialogTitle>
-            <DialogDescription className="text-base text-muted-foreground mt-2">
-              Leve o <span className="text-primary font-bold">Plano Premium</span> com desconto exclusivo!
-            </DialogDescription>
-          </DialogHeader>
-
-          <div className="mt-4 text-center">
-            <div className="bg-success/10 border border-success/30 rounded-xl p-4 mb-4">
-              <p className="text-lg font-black text-foreground">Pacote Completo</p>
-              <p className="text-destructive line-through text-sm">R$ 137,90</p>
-              <p className="text-3xl font-black text-success">R$ 27,00</p>
-            </div>
-
-            <div className="space-y-3 text-left mb-6">
-              <div className="flex items-center gap-2 text-sm">
-                <Check className="w-4 h-4 text-success" />
-                <span>2.500 Playbacks Gospel</span>
-              </div>
-              <div className="flex items-center gap-2 text-sm">
-                <Gift className="w-4 h-4 text-primary" />
-                <span>Ebook "A Voz do Louvor"</span>
-              </div>
-              <div className="flex items-center gap-2 text-sm">
-                <Gift className="w-4 h-4 text-primary" />
-                <span>Multitracks Gospel</span>
-              </div>
-              <div className="flex items-center gap-2 text-sm">
-                <Gift className="w-4 h-4 text-primary" />
-                <span>5.000 Partituras Gospel</span>
-              </div>
-              <div className="flex items-center gap-2 text-sm">
-                <Gift className="w-4 h-4 text-primary" />
-                <span>Músicas de Fundo para Oração</span>
-              </div>
-            </div>
-
-            <div className="space-y-3">
-              <button
-                onClick={handleUpgradePremium}
-                className="w-full py-4 px-6 font-bold text-white bg-success rounded-full hover:bg-success/90 hover:scale-105 transition-all duration-300 shadow-lg"
-              >
-                Sim, quero por R$ 27
-              </button>
-              <button
-                onClick={handleContinueBasic}
-                className="w-full py-3 px-6 text-sm text-muted-foreground hover:text-foreground transition-colors"
-              >
-                Não, quero continuar com o Básico
-              </button>
-            </div>
-          </div>
-        </DialogContent>
-      </Dialog>
-
     <section id="pricing" className="section-dark py-12 px-4">
       <div className="container max-w-lg mx-auto">
         {/* Section Title */}
@@ -169,12 +85,14 @@ const PricingSection = () => {
               </li>
             </ul>
 
-            <button 
-              onClick={handleBasicClick}
+            <a 
+              href="https://www.ggcheckout.com/checkout/v3/uda9p5CSRKXTcAwHsLvQ" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="block w-full py-4 px-6 text-center font-bold text-white bg-success rounded-full hover:bg-success/90 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               QUERO AGORA – R$ 10,00
-            </button>
+            </a>
             
             <p className="text-xs text-center text-muted-foreground mt-4">
               Pagamento 100% protegido
@@ -302,7 +220,6 @@ const PricingSection = () => {
         </div>
       </div>
     </section>
-    </>
   );
 };
 
