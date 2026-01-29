@@ -22,6 +22,9 @@ const PurchaseNotification = () => {
       setCurrentPurchase(randomPurchase);
       setIsVisible(true);
 
+      // Dispatch custom event to update scarcity bar
+      window.dispatchEvent(new CustomEvent('newPurchase'));
+
       setTimeout(() => {
         setIsVisible(false);
       }, 4000);
