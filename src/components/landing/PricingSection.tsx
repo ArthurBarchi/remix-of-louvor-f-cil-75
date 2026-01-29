@@ -8,6 +8,11 @@ const PricingSection = () => {
     seconds: 0,
   });
 
+  const [filledSlots, setFilledSlots] = useState(911);
+  const totalSlots = 1000;
+  const remainingSlots = totalSlots - filledSlots;
+  const percentage = Math.round((filledSlots / totalSlots) * 100);
+
   useEffect(() => {
     const timer = setInterval(() => {
       setTimeLeft((prev) => {
@@ -25,6 +30,16 @@ const PricingSection = () => {
     return () => clearInterval(timer);
   }, []);
 
+  // Listen for purchase notifications
+  useEffect(() => {
+    const handleNewPurchase = () => {
+      setFilledSlots((prev) => Math.min(prev + 1, totalSlots));
+    };
+
+    window.addEventListener('newPurchase', handleNewPurchase);
+    return () => window.removeEventListener('newPurchase', handleNewPurchase);
+  }, []);
+
   return (
     <section id="pricing" className="section-dark py-12 px-4">
       <div className="container max-w-lg mx-auto">
@@ -40,18 +55,18 @@ const PricingSection = () => {
           {/* Scarcity Element */}
           <div className="bg-white/5 border border-amber-500/30 rounded-xl p-4 max-w-sm mx-auto">
             <p className="text-sm font-bold text-white mb-3">
-              Restam apenas <span className="text-amber-500">10 vagas</span> para o produto essa semana
+              Restam apenas <span className="text-amber-500">{remainingSlots} vagas</span> para o produto essa semana
             </p>
             <div className="relative w-full bg-white/10 rounded-full h-5 overflow-hidden">
               <div 
-                className="bg-gradient-to-r from-amber-500 to-amber-400 h-full rounded-full transition-all duration-500"
-                style={{ width: '96.67%' }}
+                className="bg-gradient-to-r from-amber-500 to-amber-400 h-full rounded-full transition-all duration-500 animate-pulse"
+                style={{ width: `${percentage}%` }}
               />
               <span className="absolute inset-0 flex items-center justify-center text-xs font-bold text-white drop-shadow-md">
-                97%
+                {percentage}%
               </span>
             </div>
-            <p className="text-xs text-muted-foreground mt-2">290 de 300 vagas preenchidas</p>
+            <p className="text-xs text-muted-foreground mt-2">{filledSlots} de {totalSlots} vagas preenchidas</p>
           </div>
         </div>
 
