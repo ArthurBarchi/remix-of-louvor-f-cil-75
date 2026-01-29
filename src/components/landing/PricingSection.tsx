@@ -59,7 +59,7 @@ const PricingSection = () => {
             </p>
             <div className="relative w-full bg-white/10 rounded-full h-5 overflow-hidden">
               <div 
-                className="bg-gradient-to-r from-amber-500 to-amber-400 h-full rounded-full transition-all duration-500 animate-pulse"
+                className="bg-gradient-to-r from-amber-500 to-amber-400 h-full rounded-full transition-all duration-500 animate-[pulse_3s_ease-in-out_infinite] shadow-[0_0_15px_rgba(245,158,11,0.6)]"
                 style={{ width: `${percentage}%` }}
               />
               <span className="absolute inset-0 flex items-center justify-center text-xs font-bold text-white drop-shadow-md">
