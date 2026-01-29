@@ -86,7 +86,7 @@ const PricingSection = () => {
             </ul>
 
             <a 
-              href="https://www.ggcheckout.com/checkout/v3/uda9p5CSRKXTcAwHsLvQ" 
+              href="https://www.ggcheckout.com/checkout/v5/uda9p5CSRKXTcAwHsLvQ"
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full py-4 px-6 text-center font-bold text-white bg-success rounded-full hover:bg-success/90 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
@@ -174,7 +174,7 @@ const PricingSection = () => {
             </div>
 
             <a 
-              href="https://www.ggcheckout.com/checkout/v3/tkVEmLZIcs4BlAmdERb3" 
+              href="https://www.ggcheckout.com/checkout/v5/tkVEmLZIcs4BlAmdERb3"
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full py-4 px-6 text-center font-bold text-white bg-success rounded-full hover:bg-success/90 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
