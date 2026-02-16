@@ -37,7 +37,7 @@ const StorySection = () => {
       icon: Sparkles,
       iconBg: "bg-gradient-to-br from-violet-400 to-purple-500",
       iconColor: "text-white",
-      title: "Por Que Apenas R$ 27,00?",
+      title: "Por Que Apenas R$ 10,00?",
       content: "Muitos me perguntam por que é tão barato. A resposta é simples. Esse valor simbólico cobre nossos custos e nos permite continuar ajudando. Nossa missão não é lucrar. É facilitar o louvor em milhares de igrejas pelo Brasil.",
       hasList: false,
     },
