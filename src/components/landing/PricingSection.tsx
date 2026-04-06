@@ -131,7 +131,7 @@ const PricingSection = () => {
                 R$ 137,90
               </p>
               <p className="text-4xl font-black text-success mt-1">
-                R$ 19,00
+                R$ 15,90
               </p>
               <p className="text-sm text-muted-foreground mt-1">
                 Pagamento único
