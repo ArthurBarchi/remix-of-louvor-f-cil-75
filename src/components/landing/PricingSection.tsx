@@ -101,7 +101,7 @@ const PricingSection = () => {
             </ul>
 
             <a 
-              href="https://www.ggcheckout.com/checkout/v5/uda9p5CSRKXTcAwHsLvQ"
+              href="https://checkout.playbacksgospel.site/VCCL1O8SD1IW"
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full py-4 px-6 text-center font-bold text-white bg-success rounded-full hover:bg-success/90 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
@@ -131,7 +131,7 @@ const PricingSection = () => {
                 R$ 137,90
               </p>
               <p className="text-4xl font-black text-success mt-1">
-                R$ 15,90
+                R$ 17,90
               </p>
               <p className="text-sm text-muted-foreground mt-1">
                 Pagamento único
@@ -189,12 +189,12 @@ const PricingSection = () => {
             </div>
 
             <a 
-              href="https://www.ggcheckout.com/checkout/v5/tkVEmLZIcs4BlAmdERb3"
+              href="https://checkout.playbacksgospel.site/VCCL1O8SD1IX"
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full py-4 px-6 text-center font-bold text-white bg-success rounded-full hover:bg-success/90 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
-              QUERO AGORA – R$ 15,90
+              QUERO AGORA – R$ 17,90
             </a>
             
             <p className="text-xs text-center text-muted-foreground mt-4">
