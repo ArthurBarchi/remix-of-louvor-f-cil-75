@@ -12,9 +12,9 @@ const HeroSection = () => {
         {/* Main Headline - Now BEFORE the image */}
         <div className="text-center mb-6">
           <h1 className="text-3xl md:text-4xl font-black text-foreground leading-tight mb-2">
-            1.500 Playbacks Para
+            1.500 Playbacks Prontos
             <br />
-            <span className="text-gradient">Louvar Na Igreja</span>
+            <span className="text-gradient">Para o Culto</span>
           </h1>
           
           {/* Countdown Badge */}
@@ -34,7 +34,7 @@ const HeroSection = () => {
 
         {/* Value Proposition */}
         <p className="text-center text-foreground text-lg font-black leading-relaxed mb-6">
-          CHEGA de dor de cabeça baixando playbacks ruins do YouTube ou gastando com CD. Baixe{" "}
+          Chega de improviso no culto. Baixe seus playbacks gospel{" "}
           <span className="text-amber-500">HOJE MESMO</span> direto pro pendrive, de forma <span className="text-amber-500">SIMPLES</span> e <span className="text-amber-500">PRÁTICA</span>.
         </p>
 
