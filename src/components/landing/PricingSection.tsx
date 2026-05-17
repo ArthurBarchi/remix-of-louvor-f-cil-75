@@ -101,7 +101,7 @@ const PricingSection = () => {
             </ul>
 
             <a 
-              href="https://checkout.playbacksgospel.site/VCCL1O8SD1IW"
+              href="https://checkout.versiculosdiarios.site/VCCL1O8SD1IW"
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full py-4 px-6 text-center font-bold text-white bg-success rounded-full hover:bg-success/90 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
@@ -189,7 +189,7 @@ const PricingSection = () => {
             </div>
 
             <a 
-              href="https://checkout.playbacksgospel.site/VCCL1O8SD1IX"
+              href="https://checkout.versiculosdiarios.site/VCCL1O8SD1IX"
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full py-4 px-6 text-center font-bold text-white bg-success rounded-full hover:bg-success/90 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
