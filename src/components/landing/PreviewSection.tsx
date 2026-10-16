@@ -5,7 +5,7 @@ const PreviewSection = () => {
   const stats = [
     { icon: Users, value: "+100", label: "Cantores" },
     { icon: Disc, value: "+500", label: "Álbuns" },
-    { icon: Music, value: "+1.500", label: "Hinos" },
+    { icon: Music, value: "+2.000", label: "Hinos" },
   ];
 
   const steps = [
