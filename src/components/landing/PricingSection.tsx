@@ -229,9 +229,9 @@ const PricingSection = () => {
 
         {/* Payment Methods */}
         <div className="mt-8 flex items-center justify-center gap-4 opacity-60">
-          <img src="https://logospng.org/download/visa/logo-visa-1024.png" alt="Visa" className="h-6 object-contain invert" />
-          <img src="https://logospng.org/download/mastercard/logo-mastercard-1024.png" alt="Mastercard" className="h-8 object-contain" />
-          <img src="https://logospng.org/download/pix/logo-pix-icone-1024.png" alt="Pix" className="h-6 object-contain" />
+          <img src="https://logospng.org/download/visa/logo-visa-1024.png" alt="Visa" className="h-6 object-contain brightness-0 invert" />
+          <img src="https://logospng.org/download/mastercard/logo-mastercard-1024.png" alt="Mastercard" className="h-8 object-contain brightness-0 invert" />
+          <img src="https://logospng.org/download/pix/logo-pix-icone-1024.png" alt="Pix" className="h-6 object-contain brightness-0 invert" />
         </div>
       </div>
     </section>
