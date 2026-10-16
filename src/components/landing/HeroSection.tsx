@@ -1,5 +1,5 @@
 import { Shield, Lock, CreditCard } from "lucide-react";
-import heroAsset from "@/assets/hero-playbacks.png.asset.json";
+import heroAsset from "@/assets/hero-playbacks.png";
 import CountdownTimer from "./CountdownTimer";
 
 const HeroSection = () => {
@@ -26,7 +26,7 @@ const HeroSection = () => {
         {/* Hero Image - Now AFTER the headline */}
         <div className="mb-6 animate-fade-in">
           <img 
-            src={heroAsset.url} 
+            src={heroAsset} 
             alt="Playbacks Gospel - Mais de 2.000 hinos" 
             className="w-full rounded-2xl"
           />
