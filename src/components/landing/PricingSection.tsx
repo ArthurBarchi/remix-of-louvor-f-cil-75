@@ -131,7 +131,7 @@ const PricingSection = () => {
                 R$ 137,90
               </p>
               <p className="text-4xl font-black text-success mt-1">
-                R$ 17,90
+                R$ 19,90
               </p>
               <p className="text-sm text-muted-foreground mt-1">
                 Pagamento único
@@ -189,12 +189,12 @@ const PricingSection = () => {
             </div>
 
             <a 
-              href="https://pay.wiapy.com/xv4fAYJ8scD"
+              href="https://pay.wiapy.com/SIMOLZTv72Z"
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full py-4 px-6 text-center font-bold text-white bg-success rounded-full hover:bg-success/90 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
-              QUERO AGORA – R$ 17,90
+              QUERO AGORA – R$ 19,90
             </a>
             
             <p className="text-xs text-center text-muted-foreground mt-4">
