@@ -53,7 +53,7 @@ const PurchaseNotification = () => {
           : "-translate-x-full opacity-0"
       }`}
     >
-      <div className="bg-white rounded-xl shadow-xl border border-yellow-200 p-4 flex items-center gap-3 max-w-[320px]">
+      <div className="bg-card rounded-xl shadow-xl border border-border p-4 flex items-center gap-3 max-w-[320px]">
         {/* Yellow circle with shopping bag icon */}
         <div className="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0">
           <ShoppingBag className="w-5 h-5 text-white" />
@@ -61,10 +61,10 @@ const PurchaseNotification = () => {
 
         {/* Purchase info */}
         <div className="flex flex-col">
-          <span className="font-bold text-gray-900 text-sm">
+          <span className="font-bold text-foreground text-sm">
             {currentPurchase.name} de {currentPurchase.city}, {currentPurchase.state}
           </span>
-          <span className="text-gray-600 text-xs">
+          <span className="text-muted-foreground text-xs">
             acabou de garantir o {currentPurchase.package}
           </span>
         </div>

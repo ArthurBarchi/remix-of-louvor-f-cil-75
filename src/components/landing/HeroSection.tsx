@@ -12,9 +12,9 @@ const HeroSection = () => {
         {/* Main Headline - Now BEFORE the image */}
         <div className="text-center mb-6">
           <h1 className="text-3xl md:text-4xl font-black text-foreground leading-tight mb-2">
-            1.500 Playbacks Prontos
+            2.000 Playbacks
             <br />
-            <span className="text-gradient">Para o Culto</span>
+            <span className="text-gradient">para louvar na Igreja</span>
           </h1>
           
           {/* Countdown Badge */}
