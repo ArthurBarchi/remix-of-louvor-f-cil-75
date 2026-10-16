@@ -73,7 +73,7 @@ const PricingSection = () => {
         {/* Pricing Cards */}
         <div className="space-y-6">
           {/* Basic Package */}
-          <div className="bg-background rounded-2xl p-6 border-2 border-success">
+          <div className="bg-card rounded-2xl p-6 border-2 border-success">
             <div className="text-center mb-6">
               <h3 className="text-xl font-black text-foreground">
                 Pacote Básico
