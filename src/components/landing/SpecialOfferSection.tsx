@@ -57,7 +57,7 @@ const SpecialOfferSection = () => {
           <img 
             src={bonusBundle} 
             alt="Pacote de Bônus - 2.000 Playbacks Gospel, Harpa, Multitracks e Partituras" 
-            className="w-full h-auto rounded-xl drop-shadow-lg ring-1 ring-white/10"
+            className="w-full h-auto drop-shadow-lg"
           />
           </div>
 
