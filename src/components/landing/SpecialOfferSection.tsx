@@ -1,5 +1,5 @@
 import { Gift, BookOpen, Music, FileText, Volume2 } from "lucide-react";
-import bonusEbook from "@/assets/bonus-ebook.png";
+import bonusBundle from "@/assets/bonus-bundle.webp";
 import CountdownTimer from "./CountdownTimer";
 
 const SpecialOfferSection = () => {
@@ -52,12 +52,12 @@ const SpecialOfferSection = () => {
             +4 BÔNUS EXCLUSIVOS
           </p>
           
-          {/* Ebook Image */}
+          {/* Bundle Mockup */}
           <div className="flex justify-center mb-6">
           <img 
-            src={bonusEbook} 
-            alt="Pacote de Bônus - Playbacks Gospel" 
-            className="w-full max-w-xs h-auto drop-shadow-lg"
+            src={bonusBundle} 
+            alt="Pacote de Bônus - 2.000 Playbacks Gospel, Harpa, Multitracks e Partituras" 
+            className="w-full h-auto rounded-xl drop-shadow-lg ring-1 ring-white/10"
           />
           </div>
 
