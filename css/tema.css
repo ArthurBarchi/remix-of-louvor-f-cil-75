@@ -102,14 +102,3 @@ a.bg-green-500,
 @media (min-width: 768px) {
   .pb-fim-produto { width: 28rem; margin-top: -7rem; }
 }
-
-/* Pacote Básico com cara de "cupom recortado": o tracejado verde fica do lado de fora,
-   mais grosso, e o card branco fica recuado pra dentro, com um respiro verdinho entre os dois.
-   (só a moldura muda; o conteúdo do card continua igual) */
-#ofertas .cp-of-basic {
-  border: 0 !important;
-  outline: 2.5px dashed #22c55e;
-  outline-offset: 8px;
-  box-shadow: 0 0 0 8px rgb(34 197 94 / .10) !important;
-  margin: 12px 4px !important;
-}
