@@ -1,32 +1,319 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>2.000 Playbacks Gospel Para Louvar Na Igreja | R$10,00</title>
-    <meta name="description" content="Baixe mais de 2.000 playbacks gospel de alta qualidade por apenas R$10,00. Acesso imediato, garantia de 7 dias. Chega de playbacks ruins do YouTube!" />
-    <meta name="author" content="Estúdio Gospel" />
-
-    <meta property="og:title" content="2.000 Playbacks Gospel Para Louvar Na Igreja" />
-    <meta property="og:description" content="Baixe mais de 2.000 playbacks gospel de alta qualidade por apenas R$10,00. Acesso imediato!" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@EstudioGospel" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-
-    <!-- Utmizey Pixel -->
-    <script src="https://utmizey.com.br/v3/pixel.js"
-      data-utmizey-pixel="288e93e6-9a82-4ea9-b41e-bc70ee217fb0"
-      defer></script>
-    <script src="https://utmizey.com.br/v3/utmizey.js"
-      data-utmizey-id="0dfee090-aa7e-42ac-8fa6-ccec42ee0d4f"
-      defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Utmizey Pixel (mesmos IDs do site atual do Playback) -->
+    <script src="https://utmizey.com.br/v3/pixel.js" data-utmizey-pixel="288e93e6-9a82-4ea9-b41e-bc70ee217fb0" defer></script>
+    <script src="https://utmizey.com.br/v3/utmizey.js" data-utmizey-id="0dfee090-aa7e-42ac-8fa6-ccec42ee0d4f" defer></script>
+    <title>2.000 Playbacks Gospel Para Louvar Na Igreja</title>
+    <meta name="description" content="Mais de 2.000 playbacks gospel de alta qualidade para baixar hoje e usar na igreja. Acesso imediato, pagamento único e garantia de 7 dias.">
+    <meta property="og:title" content="2.000 Playbacks Gospel Para Louvar Na Igreja">
+    <meta property="og:description" content="Mais de 2.000 playbacks gospel de alta qualidade. Acesso imediato, direto pro pendrive.">
+    <meta property="og:type" content="website">
+    <!-- TROCAR pelo endereço final do site quando publicar (ex.: https://seusite.com.br/img/og.jpg) -->
+    <meta property="og:image" content="img/og.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="img/og.jpg">
+    <link rel="icon" href="favicon.ico">
+    <meta name="theme-color" content="#dc2626">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@700;800&display=swap">
+    <link rel="preload" as="image" href="img/hero.webp?v=3">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/extra.css">
+    <link rel="stylesheet" href="css/tema.css">
   </head>
-
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <div class="min-h-screen bg-gray-50 font-sans text-gray-900 selection:bg-red-200">
+
+      <!-- ===================== FAIXA ===================== -->
+      <div class="cp-faixa">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2L4.5 13.5H11L10 22l8.5-11.5H12L13 2z"/></svg>
+        <span>Oferta especial hoje <span data-hoje></span></span>
+      </div>
+
+      <!-- ===================== HERO ===================== -->
+      <section class="px-4 py-8 md:py-20 max-w-5xl mx-auto flex flex-col items-center text-center">
+        <span class="cp-selo"><i aria-hidden="true"></i>Para o seu ministério de louvor</span>
+        <h1 class="text-3xl md:text-5xl font-extrabold leading-tight tracking-tight max-w-4xl text-gray-900 mb-3">
+          2.000 Playbacks <span class="text-red-600">para louvar na Igreja</span>
+        </h1>
+        <p class="text-gray-700 max-w-2xl mb-6 leading-relaxed" style="font-size:16px">
+          Chega de improviso no culto. Baixe seus playbacks gospel hoje mesmo, direto pro pendrive, de forma simples e prática.
+        </p>
+        <div class="pb-hero-img w-full max-w-2xl mx-auto mb-10">
+          <img src="img/hero.webp?v=3" alt="2.000 Playbacks Gospel para o seu ministério de louvor" width="1000" height="693" class="w-full h-auto rounded-lg" fetchpriority="high">
+        </div>
+        <p class="pb-hero-preco"><span>De <s>R$ 79</s> por apenas</span> <strong>R$ 10,00</strong><small>pagamento único · acesso imediato</small></p>
+        <button data-rolar class="w-full md:w-auto px-10 py-5 bg-green-500 hover:bg-green-600 active:bg-green-700 text-white text-xl md:text-2xl font-black rounded-xl shadow-[0_6px_0_#16a34a] hover:shadow-[0_4px_0_#16a34a] hover:translate-y-[2px] transition-all flex flex-col items-center justify-center uppercase tracking-wider">
+          <span>Quero Acesso Agora</span>
+        </button>
+        <ul class="cp-hero-list">
+          <li>
+            <span class="cp-hero-ck" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+            <p><strong>Mais de 2.000 playbacks gospel</strong> de alta qualidade, prontos para o culto</p>
+          </li>
+          <li>
+            <span class="cp-hero-ck" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+            <p><strong>Direto pro pendrive ou CD,</strong> sem depender do YouTube na hora do louvor</p>
+          </li>
+          <li>
+            <span class="cp-hero-ck" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+            <p><strong>Acesso imediato no e-mail,</strong> pagamento único e 7 dias de garantia</p>
+          </li>
+        </ul>
+        <div class="cp-prova">
+          <div class="cp-prova-rostos">
+            <img src="img/rostos/rosto-1.webp" alt="" width="44" height="44">
+            <img src="img/rostos/rosto-2.webp" alt="" width="44" height="44">
+            <img src="img/rostos/rosto-3.webp" alt="" width="44" height="44">
+          </div>
+          <div class="cp-prova-txt">
+            <span class="cp-prova-est" aria-label="5 estrelas">★★★★★</span>
+            <span>Elogiado por quem já usa</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== O QUE VOCÊ RECEBE ===================== -->
+      <section class="pb-receb px-4 py-12">
+        <div class="pb-receb-card">
+          <h2 class="pb-receb-h">Veja o que você recebe na prática</h2>
+          <p class="pb-receb-p">Tudo separado em pastas, do jeito que chega no seu Google Drive.</p>
+          <div class="pb-receb-produto"><img src="img/por-dentro.webp?v=2" alt="Por dentro do pacote: pastas por cantor no celular, músicas em MP3, pendrive, cifras e partituras" width="1100" height="558" loading="lazy"></div>
+          <ul class="pb-receb-chips"><li>Pastas por cantor</li><li>Músicas em MP3</li><li>Cifras e partituras</li></ul>
+          <div class="pb-kit">
+          <div class="pb-kit-item"><span class="pb-kit-n">2.000</span><span class="pb-kit-t">Playbacks gospel</span><p>MP3 em alta qualidade, prontos pra tocar no culto.</p></div>
+          <div class="pb-kit-item"><span class="pb-kit-n">+100</span><span class="pb-kit-t">Cantores e ministérios</span><p>Os louvores que a sua igreja já canta.</p></div>
+          <div class="pb-kit-item"><span class="pb-kit-n">+500</span><span class="pb-kit-t">Álbuns</span><p>Organizados em pastas, fácil de achar o hino certo.</p></div>
+          <div class="pb-kit-item"><span class="pb-kit-n">+100</span><span class="pb-kit-t">Cifras gospel</span><p>Pra quem toca violão ou teclado no ministério.</p></div>
+        </div>
+          <p class="pb-receb-cta">Ainda hoje você vai ter o playback certo para o próximo culto.</p>
+          <button data-rolar class="w-full md:w-auto px-10 py-5 bg-green-500 hover:bg-green-600 active:bg-green-700 text-white text-xl md:text-2xl font-black rounded-xl shadow-[0_6px_0_#16a34a] hover:shadow-[0_4px_0_#16a34a] hover:translate-y-[2px] transition-all uppercase tracking-wider mx-auto block">Quero louvar agora</button>
+        </div>
+      </section>
+
+      <!-- ===================== PARA QUEM É ===================== -->
+      <section class="cp-ideal">
+        <div class="cp-ideal-in">
+          <span class="cp-ideal-tag">Para quem é</span>
+          <h2 class="cp-ideal-h">Esse material é <span>para você que...</span></h2>
+          <ul class="cp-ideal-list">
+            <li class="cp-ideal-item">
+              <span class="cp-ideal-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><path d="M12 19v3"/></svg></span>
+              <p><strong>Louva na igreja e sofre</strong> para achar playback de qualidade.</p>
+            </li>
+            <li class="cp-ideal-item">
+              <span class="cp-ideal-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20zM12 8v4M12 16h.01"/></svg></span>
+              <p><strong>Já passou aperto com o YouTube</strong> travando ou com anúncio na hora do culto.</p>
+            </li>
+            <li class="cp-ideal-item">
+              <span class="cp-ideal-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="2"/></svg></span>
+              <p><strong>Gastava com CD de R$ 15</strong> que vinha com poucos hinos.</p>
+            </li>
+            <li class="cp-ideal-item">
+              <span class="cp-ideal-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span>
+              <p><strong>Perde horas procurando</strong> o hino certo e deixa louvores de lado por falta de material.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ===================== DEPOIMENTOS ===================== -->
+      <section class="cp-dep py-16 px-4 bg-gray-50 overflow-hidden">
+        <h2 class="text-2xl md:text-3xl font-bold text-center mb-2 text-gray-900">O que dizem sobre os playbacks</h2>
+        <p class="pb-dep-sub">Mensagens reais de clientes no WhatsApp. Arraste para o lado →</p>
+        <div class="pb-dep-trilho" data-dep-trilho>
+          <button type="button" class="pb-dep-item" data-zoom="img/dep/dep-1.webp" aria-label="Ampliar depoimento de Sandro, músico"><img src="img/dep/dep-1.webp" alt="Depoimento de Sandro, músico no WhatsApp" width="450" height="582" loading="lazy"></button>
+          <button type="button" class="pb-dep-item" data-zoom="img/dep/dep-2.webp" aria-label="Ampliar depoimento de Fernanda, cantora"><img src="img/dep/dep-2.webp" alt="Depoimento de Fernanda, cantora no WhatsApp" width="368" height="478" loading="lazy"></button>
+          <button type="button" class="pb-dep-item" data-zoom="img/dep/dep-3.webp" aria-label="Ampliar depoimento de Ana Clara"><img src="img/dep/dep-3.webp" alt="Depoimento de Ana Clara no WhatsApp" width="394" height="360" loading="lazy"></button>
+          <button type="button" class="pb-dep-item" data-zoom="img/dep/dep-4.webp" aria-label="Ampliar depoimento de Pastor Tita"><img src="img/dep/dep-4.webp" alt="Depoimento de Pastor Tita no WhatsApp" width="374" height="276" loading="lazy"></button>
+          <button type="button" class="pb-dep-item" data-zoom="img/dep/dep-5.webp" aria-label="Ampliar depoimento de Cida"><img src="img/dep/dep-5.webp" alt="Depoimento de Cida no WhatsApp" width="450" height="484" loading="lazy"></button>
+          <button type="button" class="pb-dep-item" data-zoom="img/dep/dep-6.webp" aria-label="Ampliar depoimento de Elizeu"><img src="img/dep/dep-6.webp" alt="Depoimento de Elizeu no WhatsApp" width="392" height="338" loading="lazy"></button>
+          <button type="button" class="pb-dep-item" data-zoom="img/dep/dep-7.webp" aria-label="Ampliar depoimento de Dona Neide"><img src="img/dep/dep-7.webp" alt="Depoimento de Dona Neide no WhatsApp" width="388" height="356" loading="lazy"></button>
+          <button type="button" class="pb-dep-item" data-zoom="img/dep/dep-8.webp" aria-label="Ampliar depoimento de Matheus"><img src="img/dep/dep-8.webp" alt="Depoimento de Matheus no WhatsApp" width="376" height="248" loading="lazy"></button>
+        </div>
+        <div class="cp-pg-ctrl">
+          <button type="button" class="cp-pg-seta" aria-label="Depoimento anterior" data-dep="-1">←</button>
+          <button type="button" class="cp-pg-seta" aria-label="Próximo depoimento" data-dep="1">→</button>
+        </div>
+      </section>
+
+      <!-- ampliação do depoimento -->
+      <div class="pb-zoom" data-zoom-box><img alt="Depoimento ampliado"></div>
+
+      <!-- ===================== PESSOAS USANDO ===================== -->
+      <section class="cp-uso">
+        <span class="cp-uso-tag">Na prática</span>
+        <h2 class="cp-uso-h">Veja quem já está louvando</h2>
+        <p class="cp-uso-sub">Na igreja, no ensaio ou em casa: do jeito que você preferir.</p>
+        <div class="cp-uso-trilho" data-auto-trilho>
+          <div class="cp-uso-card"><img src="img/uso/uso-2.webp" alt="Jovem louvando no culto" width="600" height="800" loading="lazy" decoding="async"></div>
+          <div class="cp-uso-card"><img src="img/uso/uso-3.webp" alt="Ministro de louvor cantando na igreja" width="600" height="800" loading="lazy" decoding="async"></div>
+          <div class="cp-uso-card"><img src="img/uso/uso-1.webp" alt="Cantora louvando com microfone na igreja" width="600" height="800" loading="lazy" decoding="async"></div>
+          <div class="cp-uso-card"><img src="img/uso/uso-4.webp" alt="Banda de louvor no culto" width="600" height="800" loading="lazy" decoding="async"></div>
+          <div class="cp-uso-card"><img src="img/uso/uso-5.webp" alt="Igreja reunida no culto" width="600" height="800" loading="lazy" decoding="async"></div>
+        </div>
+        <div class="cp-pg-ctrl">
+          <button type="button" class="cp-pg-seta" aria-label="Foto anterior" data-auto-seta="-1">←</button>
+          <button type="button" class="cp-pg-pausa" data-auto-pausa>Pausar</button>
+          <button type="button" class="cp-pg-seta" aria-label="Próxima foto" data-auto-seta="1">→</button>
+        </div>
+        <div class="flex justify-center mt-8">
+          <div class="pb-pula"><svg class="w-12 h-12 text-red-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg></div>
+        </div>
+      </section>
+
+      <!-- ===================== OFERTAS ===================== -->
+      <section id="ofertas" class="py-16 px-4 bg-gray-900">
+        <div class="max-w-5xl mx-auto">
+          <div class="cp-of-topo">
+            <span class="cp-of-tag">Escolha sua oferta</span>
+            <h2 class="cp-of-h2">Transforme sua adoração: todos os playbacks em um acesso só.</h2>
+          </div>
+          <div class="cp-of-col">
+            <!-- Básico -->
+            <div class="cp-of cp-of-basic bg-white rounded-2xl p-6 md:p-8 flex flex-col border-2 border-gray-200">
+              <h3 class="cp-of-t text-2xl font-bold text-gray-900 mb-6 text-center">Pacote Básico</h3>
+              <ul class="cp-of-list space-y-4 mb-8 flex-grow">
+                <li class="flex items-start gap-3"><svg class="w-5 h-5 text-gray-500 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg><span class="text-gray-700">2.000 Playbacks Gospel</span></li>
+                <li class="flex items-start gap-3"><svg class="w-5 h-5 text-gray-500 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg><span class="text-gray-700">+100 Cifras Gospel</span></li>
+                <li class="flex items-start gap-3"><svg class="w-5 h-5 text-gray-500 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg><span class="text-gray-700">Acesso imediato após o pagamento</span></li>
+                <li class="flex items-start gap-3"><svg class="w-5 h-5 text-gray-500 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg><span class="text-gray-700">Garantia de 7 dias</span></li>
+              </ul>
+              <div class="cp-of-price text-center mb-6">
+                <p class="cp-pr-de">De <s>R$ 79</s> por:</p>
+                <div class="cp-pr-valor">R$ 10,00</div>
+                <p class="cp-pr-sub">à vista, pagamento único</p>
+              </div>
+              <button data-abrir-modal class="cp-of-btn w-full py-4 bg-gray-700 hover:bg-gray-800 text-white font-bold rounded-xl shadow-[0_4px_0_#374151] hover:shadow-[0_2px_0_#374151] hover:translate-y-[2px] transition-all text-lg uppercase tracking-wide">QUERO O PACOTE BÁSICO</button>
+              <p class="cp-of-note text-center text-xs text-red-600 mt-4 font-bold px-2">Quer ir além? Veja o Completo com 4 bônus logo abaixo ↓</p>
+            </div>
+
+            <!-- Completo -->
+            <div class="cp-of cp-of-premium bg-white rounded-2xl p-6 md:p-8 flex flex-col border-4 border-green-500 shadow-2xl relative transform md:-translate-y-4">
+              <div class="cp-of-badge absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-green-500 text-white font-black px-6 py-2 rounded-full uppercase tracking-widest text-sm shadow-lg whitespace-nowrap">MAIS VENDIDO!</div>
+              <h3 class="cp-of-t text-3xl font-black text-gray-900 mb-2 mt-4 text-center">Pacote Completo</h3>
+              <img src="img/completo.webp?v=2" alt="Pacote Completo com bônus" width="900" height="675" loading="lazy" class="w-full mx-auto h-auto drop-shadow-md mb-6">
+              <ul class="cp-pl">
+                <li class="cp-pi"><span class="cp-pi-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span>2.000 Playbacks Gospel</span></li>
+                <li class="cp-pi"><span class="cp-pi-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span>+100 Cifras Gospel</span></li>
+                <li class="cp-pi"><span class="cp-pi-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span>Acesso imediato e vitalício</span></li>
+                <li class="cp-pi"><span class="cp-pi-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span>Celular, computador, pendrive ou CD</span></li>
+                <li class="cp-pi cp-pi-bonus"><span class="cp-pi-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5C9.5 3 11 5 12 8c1-3 2.5-5 4.5-5a2.5 2.5 0 0 1 0 5"/></svg></span><span>Bônus 01 - Ebook "A Voz do Louvor": guia prático para cantar melhor na igreja</span></li>
+                <li class="cp-pi cp-pi-bonus"><span class="cp-pi-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5C9.5 3 11 5 12 8c1-3 2.5-5 4.5-5a2.5 2.5 0 0 1 0 5"/></svg></span><span>Bônus 02 - Multitracks Gospel: instrumentos separados para ensaiar</span></li>
+                <li class="cp-pi cp-pi-bonus"><span class="cp-pi-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5C9.5 3 11 5 12 8c1-3 2.5-5 4.5-5a2.5 2.5 0 0 1 0 5"/></svg></span><span>Bônus 03 - 5.000 Partituras Gospel para músicos e ministérios</span></li>
+                <li class="cp-pi cp-pi-bonus"><span class="cp-pi-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5C9.5 3 11 5 12 8c1-3 2.5-5 4.5-5a2.5 2.5 0 0 1 0 5"/></svg></span><span>Bônus 04 - Músicas de Fundo para Oração e pregação</span></li>
+              </ul>
+              <div class="cp-of-price cp-of-price-g text-center mb-6 bg-green-50 py-4 rounded-xl">
+                <p class="cp-pr-de">De <s>R$ 137,90</s> por:</p>
+                <div class="cp-pr-valor">R$ 19,90</div>
+                <p class="cp-pr-sub">à vista, pagamento único</p>
+              </div>
+              <button data-checkout="https://pay.wiapy.com/SIMOLZTv72Z" class="w-full py-5 bg-green-500 hover:bg-green-600 text-white font-black rounded-xl shadow-[0_6px_0_#16a34a] hover:shadow-[0_4px_0_#16a34a] hover:translate-y-[2px] transition-all text-xl md:text-2xl uppercase tracking-wider cp-of-btn cp-of-pulse">QUERO O PACOTE COMPLETO</button>
+              <div class="cp-pos">
+                <p class="cp-pag">
+                  <span><i class="cp-pag-raio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L4.5 13.5H11L10 22l8.5-11.5H12L13 2z"/></svg></i>Acesso imediato</span>
+                  <span><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></i>Pix ou cartão</span>
+                </p>
+                <div class="cp-selos3">
+                  <div class="cp-selo3"><span class="cp-selo3-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></span><span>Compra</span><strong>SEGURA</strong></div>
+                  <div class="cp-selo3"><span class="cp-selo3-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></span><span>Satisfação</span><strong>GARANTIDA</strong></div>
+                  <div class="cp-selo3"><span class="cp-selo3-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span><span>Privacidade</span><strong>PROTEGIDA</strong></div>
+                </div>
+                <p class="cp-pos-txt">Pagamento único. Sem mensalidade e sem assinatura.<br>Você recebe tudo na hora, direto no seu e-mail.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== GARANTIA ===================== -->
+      <section class="cp-gar py-16 px-4 bg-white">
+        <div class="max-w-3xl mx-auto flex flex-col md:flex-row items-center gap-8 text-center md:text-left">
+          <div class="w-32 h-32 shrink-0 bg-blue-50 rounded-full flex items-center justify-center border-4 border-blue-100">
+            <svg class="w-16 h-16 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+          </div>
+          <div>
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Garantia Incondicional de 7 Dias</h2>
+            <p class="text-gray-600 text-lg leading-relaxed">O seu risco é zero. Compre agora, baixe os playbacks e teste na sua igreja. Se em até 7 dias você não estiver satisfeito, basta enviar um único e-mail e devolvemos 100% do seu dinheiro, sem perguntas e sem complicação.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== COMO FUNCIONA ===================== -->
+      <section class="cp-como">
+        <div class="cp-como-in">
+          <h2 class="cp-como-h">Como funciona depois do pagamento</h2>
+          <ol class="cp-como-list">
+            <li><span class="cp-como-n">1</span><div><strong>Garanta seu acesso</strong><span>Pagamento único e seguro, no Pix ou no cartão.</span></div></li>
+            <li><span class="cp-como-n">2</span><div><strong>Receba no e-mail</strong><span>O link das pastas no Google Drive chega na hora.</span></div></li>
+            <li><span class="cp-como-n">3</span><div><strong>Baixe e louve</strong><span>Copie pro pendrive ou CD e use na igreja.</span></div></li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ===================== FAQ ===================== -->
+      <section class="cp-faq py-16 px-4 bg-gray-50">
+        <h2 class="text-2xl md:text-3xl font-bold text-center text-gray-900">Perguntas Frequentes</h2>
+        <div class="w-full max-w-3xl mx-auto mt-12 space-y-4" data-faq></div>
+      </section>
+
+      <!-- ===================== FINAL ===================== -->
+      <section class="cp-fim">
+        <div class="cp-fim-in">
+          <img class="pb-fim-produto" src="img/produto-fim.webp" alt="Kit 2.000 Playbacks Gospel: caixa, CD, microfone, pendrive, celular e fone" width="760" height="472" loading="lazy">
+          <p class="cp-fim-tag">Oferta especial de hoje</p>
+          <h2 class="cp-fim-h">O culto não espera. <span>Tenha o playback certo na hora certa.</span></h2>
+          <button data-rolar class="cp-final-btn cp-fim-btn bg-green-500 text-white">Quero meu acesso</button>
+          <p class="cp-fim-seg">Acesso imediato · Pagamento único · Garantia de 7 dias</p>
+        </div>
+      </section>
+
+      <!-- ===================== MODAL (ao clicar no Básico) ===================== -->
+      <div class="pb-modal" data-modal>
+        <div class="pb-modal-card bg-white rounded-2xl w-full max-w-md p-5 text-center relative shadow-2xl">
+          <h3 class="text-xl md:text-2xl font-black text-red-600 mb-1 leading-tight uppercase">Espere! Condição única!</h3>
+          <p class="text-sm font-bold text-gray-800 mb-3">Por só <span class="text-green-600">R$ 9,90 a mais</span> você leva o Pacote Completo.</p>
+          <img src="img/completo.webp?v=2" alt="Pacote Completo" width="900" height="675" class="w-48 mx-auto h-auto drop-shadow-md mb-3">
+          <div class="bg-green-50 border border-green-100 rounded-xl p-3 mb-3 text-left">
+            <p class="text-xs font-bold text-green-800 mb-2 text-center uppercase">Você vai adicionar:</p>
+            <ul class="space-y-1.5 text-xs text-gray-800 font-medium">
+              <li class="flex items-start gap-1.5"><svg class="w-4 h-4 text-green-600 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg><span>Ebook "A Voz do Louvor"</span></li>
+              <li class="flex items-start gap-1.5"><svg class="w-4 h-4 text-green-600 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg><span>Multitracks Gospel</span></li>
+              <li class="flex items-start gap-1.5"><svg class="w-4 h-4 text-green-600 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg><span>5.000 Partituras Gospel</span></li>
+              <li class="flex items-start gap-1.5"><svg class="w-4 h-4 text-green-600 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg><span>Músicas de Fundo para Oração</span></li>
+            </ul>
+          </div>
+          <div class="mb-3">
+            <p class="text-gray-500 line-through text-sm">De R$ 137,90</p>
+            <p class="text-2xl font-black text-green-600">POR APENAS R$ 19,90</p>
+          </div>
+          <button data-checkout="https://pay.wiapy.com/SIMOLZTv72Z" class="w-full py-3 mb-3 bg-green-500 hover:bg-green-600 text-white font-black rounded-xl shadow-[0_4px_0_#16a34a] hover:translate-y-[2px] transition-all text-lg uppercase tracking-wide">SIM, QUERO O PACOTE COMPLETO</button>
+          <button data-checkout="https://pay.wiapy.com/jklODxCpsfx" class="w-full py-2.5 bg-red-100 hover:bg-red-200 text-red-700 font-bold rounded-lg text-xs uppercase tracking-wider transition-all">Não, obrigado. Quero apenas o pacote básico por R$ 10.</button>
+        </div>
+      </div>
+
+      <!-- ===================== BARRA FIXA (celular) ===================== -->
+      <div class="cp-fixo" data-fixo><a href="#ofertas" data-rolar>Quero meus playbacks <small>a partir de R$ 10,00 · pagamento único</small></a></div>
+
+      <!-- ===================== RODAPÉ ===================== -->
+      <footer class="cp-rod">
+        <a class="cp-rod-mail" href="mailto:playbacksgospel@gmail.com">playbacksgospel@gmail.com</a>
+        <p>Estúdio Gospel é um projeto independente, feito para abençoar igrejas e ministérios de louvor. Os arquivos são entregues em formato digital, por link de acesso enviado ao e-mail informado na compra. Dúvidas ou pedidos de reembolso dentro do prazo de garantia podem ser feitos pelo e-mail acima.</p>
+        <p>Este site não é afiliado ao Facebook™, Instagram™ ou Google™.</p>
+        <p>© <span data-ano></span> · ESTÚDIO GOSPEL · Todos os direitos reservados.</p>
+        <p class="cp-rod-links">
+          <a href="#">Termos de uso</a>
+          <a href="#">Política de privacidade</a>
+        </p>
+      </footer>
+    </div>
+
+    <script src="js/app.js"></script>
   </body>
 </html>

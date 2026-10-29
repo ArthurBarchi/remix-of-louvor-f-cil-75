@@ -1,0 +1,229 @@
+/* Ajustes da versão Playback sobre o CSS base (mesmo visual do Direito Descomplica) */
+
+/* ---------- FAQ ---------- */
+.pb-faq-resp { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .3s ease, opacity .3s ease; opacity: 0; }
+.pb-faq-resp > div { overflow: hidden; }
+.pb-faq-aberto .pb-faq-resp { grid-template-rows: 1fr; opacity: 1; }
+.pb-faq-aberto .pb-faq-seta { transform: rotate(180deg); }
+
+/* ---------- Modal ---------- */
+.pb-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: rgb(0 0 0/.8);
+}
+.pb-modal.pb-aberto { display: flex; }
+.pb-modal-card { animation: pb-zoom .2s ease-out; }
+@keyframes pb-zoom { from { opacity: 0; transform: scale(.95); } to { opacity: 1; transform: scale(1); } }
+
+/* ---------- Seta animada ---------- */
+.pb-pula { animation: pb-pula 1.5s ease-in-out infinite; }
+@keyframes pb-pula { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(15px); } }
+
+/* utilitário que não veio no CSS base */
+.mt-8 { margin-top: 2rem; }
+
+/* ---------- O que você recebe: números do pacote ---------- */
+.pb-kit {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .75rem;
+  margin: 0;
+  text-align: left;
+}
+@media (min-width: 768px) { .pb-kit { grid-template-columns: repeat(4, 1fr); gap: 1rem; } }
+.pb-kit-item {
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #f0e4d2;
+  border-radius: 1rem;
+  padding: 1.15rem 1rem 1rem;
+  box-shadow: 0 1px 2px rgb(0 0 0/.04), 0 10px 24px -16px rgb(60 35 10/.3);
+}
+.pb-kit-item::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--pb-amarelo, #f5a623), var(--pb-laranja, #f28c1b));
+}
+.pb-kit-n {
+  display: block;
+  font-family: "Poppins", Inter, sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -.02em;
+  background: linear-gradient(135deg, #f5a623, #e8730c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.pb-kit-t {
+  display: block;
+  margin: .5rem 0 .35rem;
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: #111827;
+}
+.pb-kit-item p { margin: 0; font-size: .84rem; line-height: 1.45; color: #6b7280; }
+
+/* card claro (creme alaranjado da capa) envolvendo a foto e os números */
+.pb-receb-card {
+  max-width: 56rem;
+  margin: 0 auto;
+  padding: 2.25rem 1rem 2rem;
+  border-radius: 1.75rem;
+  text-align: center;
+  background:
+    radial-gradient(90% 50% at 50% 0%, rgb(245 166 35 / .22), transparent 70%),
+    linear-gradient(180deg, #fff5e8 0%, #ffecd6 100%);
+  border: 1px solid #f6dcb6;
+  box-shadow: 0 1px 2px rgb(0 0 0/.04), 0 22px 44px -28px rgb(150 80 10/.45);
+}
+@media (min-width: 768px) { .pb-receb-card { padding: 3rem 2.5rem 2.5rem; } }
+.pb-receb-h {
+  margin: 0 0 .5rem;
+  font-size: 1.55rem;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -.02em;
+  color: #111827;
+  text-wrap: balance;
+}
+@media (min-width: 768px) { .pb-receb-h { font-size: 2rem; } }
+.pb-receb-p { margin: 0 auto 1.5rem; max-width: 30rem; font-size: .95rem; color: #7a6450; }
+.pb-receb-card .pb-kit-item { border-color: #f3dfc2; box-shadow: 0 1px 2px rgb(0 0 0/.04), 0 10px 22px -16px rgb(150 80 10/.4); }
+.pb-receb-cta { margin: 1.75rem 0 1.1rem; font-size: 1.05rem; font-weight: 600; color: #1f2937; }
+
+/* ---------- Depoimentos: mural de prints ---------- */
+.pb-dep-sub { margin: 0 0 1.5rem; text-align: center; font-size: .9rem; color: #6b7280; }
+.pb-dep-trilho {
+  display: flex;
+  align-items: flex-start;
+  gap: .9rem;
+  margin: 0 -1rem;
+  padding: .5rem 1rem 1.25rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-padding-left: 1rem;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+.pb-dep-trilho::-webkit-scrollbar { display: none; }
+.pb-dep-item {
+  flex: none;
+  width: 80%;
+  max-width: 20rem;
+  margin: 0;
+  padding: 0;
+  scroll-snap-align: start;
+  border: 1px solid #ece4d8;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: #efe7dc;
+  box-shadow: 0 1px 2px rgb(0 0 0/.04), 0 12px 24px -14px rgb(60 35 10/.4);
+  cursor: zoom-in;
+}
+@media (min-width: 768px) {
+  .pb-dep-trilho { max-width: 64rem; margin: 0 auto; padding: .5rem 0 1.25rem; scroll-padding-left: 0; }
+  .pb-dep-item { width: 19rem; }
+}
+.pb-dep-item img { display: block; width: 100%; height: auto; }
+.pb-zoom {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: rgb(0 0 0/.85);
+  cursor: zoom-out;
+}
+.pb-zoom.pb-aberto { display: flex; }
+.pb-zoom img {
+  width: 100%;
+  max-width: 28rem;
+  max-height: 90vh;
+  height: auto;
+  object-fit: contain;
+  border-radius: 1rem;
+  box-shadow: 0 20px 50px rgb(0 0 0/.5);
+  animation: pb-zoom .2s ease-out;
+}
+
+/* ---------- Preço no topo ---------- */
+.pb-hero-preco {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: .15rem .5rem;
+  margin: -1.25rem 0 1.1rem;
+  color: #374151;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.pb-hero-preco s { color: #9ca3af; }
+.pb-hero-preco strong {
+  font-family: "Poppins", Inter, sans-serif;
+  font-size: 2.1rem;
+  font-weight: 800;
+  line-height: 1;
+  color: #16a34a;
+  letter-spacing: -.02em;
+}
+.pb-hero-preco small { flex-basis: 100%; font-size: .8rem; font-weight: 600; color: #6b7280; }
+
+/* ---------- Foto do Drive dentro do card escuro ---------- */
+.pb-receb-foto {
+  margin: 0 auto 1.25rem;
+  max-width: 40rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 14px 28px -18px rgb(80 40 5/.55);
+}
+.pb-receb-foto img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; object-position: 37% 36%; }
+
+/* ---------- Fotos "quem já está louvando": rolagem automática (igual ao Direito) ---------- */
+.cp-uso-trilho[data-auto-trilho] { scroll-snap-type: none; }
+.cp-uso-trilho[data-auto-trilho] .cp-uso-card { scroll-snap-align: none; }
+.cp-uso-trilho[data-auto-trilho] img { user-select: none; -webkit-user-drag: none; }
+.cp-uso .cp-pg-ctrl { margin-top: .25rem; }
+
+/* ---------- Por dentro do pacote (composição com fundo removido) ---------- */
+.pb-receb-produto { margin: .25rem -.85rem .9rem; }
+@media (min-width: 768px) { .pb-receb-produto { margin: .25rem auto 1rem; max-width: 46rem; } }
+.pb-receb-produto img {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 3px 3px rgb(80 40 5 / .18)) drop-shadow(0 16px 20px rgb(120 60 10 / .18));
+}
+.pb-receb-chips {
+  list-style: none;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .4rem;
+}
+.pb-receb-chips li {
+  padding: .35rem .75rem;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid #f3dfc2;
+  font-size: .78rem;
+  font-weight: 700;
+  color: #9a4f08;
+}

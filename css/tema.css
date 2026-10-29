@@ -1,0 +1,115 @@
+/* Tema Playback: laranja/amarelo da capa "2.000 Playbacks Gospel".
+   Os verdes (botões, checks, passos) continuam os mesmos do Direito. */
+
+:root {
+  --pb-laranja: #f28c1b;       /* laranja da capa */
+  --pb-laranja-esc: #d96d0a;   /* texto laranja sobre fundo claro */
+  --pb-amarelo: #f5a623;       /* brilho amarelo da capa */
+  --pb-claro: #fff4e6;
+  --pb-borda: #fed7aa;
+  --pb-escuro: #15100a;        /* preto quente do fundo da capa */
+  --cp-azul: #fff6ea;          /* fundo azul-claro do Direito vira creme quente */
+
+  /* utilitários que eram vermelho/azul/roxo passam a ser laranja/amarelo */
+  --color-red-100: #ffedd5;
+  --color-red-200: #fed7aa;
+  --color-red-600: #e8730c;
+  --color-red-700: #c2580a;
+  --color-blue-50: #fff8eb;
+  --color-blue-100: #fde9c4;
+  --color-blue-600: #e08a0b;
+  --color-purple-100: #fef3c7;
+  --color-purple-600: #d97706;
+}
+
+/* fundo geral creme + brilho laranja atrás do topo */
+body { background: #fff6ea; }
+.min-h-screen > section:nth-of-type(1) {
+  background: radial-gradient(60% 45% at 50% 38%, rgb(245 166 35 / .22), transparent 70%);
+}
+
+/* faixa do topo, chamada final e rodapé: preto quente em vez de azul-marinho */
+.cp-faixa,
+.cp-fim,
+.cp-rod { background: var(--pb-escuro) !important; }
+.cp-faixa svg { color: var(--pb-amarelo); }
+.cp-fim-tag,
+.cp-fim-h span { color: var(--pb-amarelo); }
+
+/* área das ofertas */
+#ofertas { background: radial-gradient(70% 40% at 50% 0%, rgb(242 140 27 / .28), transparent 70%), var(--pb-escuro); }
+.cp-of-tag { color: var(--pb-amarelo); border-color: rgb(245 166 35 / .4); background: rgb(245 166 35 / .1); }
+
+/* selos, etiquetas e destaques */
+.cp-selo i { background: var(--pb-laranja); box-shadow: 0 0 0 3px rgb(242 140 27 / .2); }
+.cp-uso-tag,
+.cp-rec-tag,
+.cp-ideal .cp-ideal-tag { color: var(--pb-laranja-esc); background: var(--pb-claro); border-color: var(--pb-borda); }
+.cp-ideal .cp-ideal-h span { color: var(--pb-laranja-esc); }
+.cp-ideal .cp-ideal-ico { color: var(--pb-laranja-esc); background: #ffedd5; border-color: var(--pb-borda); }
+.cp-rec-mail { background: var(--pb-claro); border-color: var(--pb-borda); }
+.cp-rec-mail-ico { background: #ffedd5; color: var(--pb-laranja-esc); }
+.cp-pr-de s { color: #c2580a; }
+
+/* a sombra do produto agora está desenhada na própria imagem (img/hero.webp) */
+.pb-hero-img img { filter: none !important; }
+
+
+/* barra fixa do celular: texto em duas linhas organizadas */
+.cp-fixo a { flex-direction: column !important; gap: .1rem !important; padding: .7rem 1rem !important; line-height: 1.15; }
+.cp-fixo a small { font-size: .78rem; opacity: .95; }
+
+/* botões verdes: sem o brilho borrado do Direito. Fica a borda 3D de baixo + sombra curta,
+   e a animação só "respira" o tamanho, sem glow */
+button.bg-green-500,
+a.bg-green-500,
+.cp-final-btn,
+.cp-fixo a,
+#ofertas .cp-of-premium .cp-of-btn {
+  box-shadow: 0 4px 0 #15803d, 0 8px 14px -10px rgb(21 128 61 / .55) !important;
+  filter: none !important;
+}
+button.bg-green-500,
+a.bg-green-500,
+#ofertas .cp-of-pulse { animation: pbRespira 3.2s ease-in-out infinite !important; }
+@keyframes pbRespira { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.025); } }
+@media (prefers-reduced-motion: reduce) {
+  button.bg-green-500, a.bg-green-500, #ofertas .cp-of-pulse { animation: none !important; }
+}
+
+/* chamada final: produto "saindo" da seção escura, metade no creme e metade no preto */
+.cp-fim {
+  background:
+    radial-gradient(70% 38% at 50% 14%, rgb(242 140 27 / .32), transparent 70%),
+    var(--pb-escuro) !important;
+  padding-top: 0 !important;
+  display: flow-root; /* impede a margem negativa do produto de puxar a seção inteira */
+}
+/* espaço embaixo do FAQ para o produto sobrepor sem cobrir as perguntas */
+.cp-faq { padding-bottom: 7rem !important; }
+@media (min-width: 768px) { .cp-faq { padding-bottom: 9rem !important; } }
+.pb-fim-produto {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: min(100%, 23rem);
+  height: auto;
+  margin: -5rem auto 1.5rem;
+  filter:
+    drop-shadow(0 18px 26px rgb(0 0 0 / .45))
+    drop-shadow(0 0 36px rgb(242 140 27 / .28));
+}
+@media (min-width: 768px) {
+  .pb-fim-produto { width: 28rem; margin-top: -7rem; }
+}
+
+/* Pacote Básico com cara de "cupom recortado": o tracejado verde fica do lado de fora,
+   mais grosso, e o card branco fica recuado pra dentro, com um respiro verdinho entre os dois.
+   (só a moldura muda; o conteúdo do card continua igual) */
+#ofertas .cp-of-basic {
+  border: 0 !important;
+  outline: 2.5px dashed #22c55e;
+  outline-offset: 8px;
+  box-shadow: 0 0 0 8px rgb(34 197 94 / .10) !important;
+  margin: 12px 4px !important;
+}
