@@ -91,22 +91,19 @@
     }, { passive: true });
   }
 
-  // ---------- Fotos que passam sozinhas (mesmo esquema e velocidade do Direito Descomplica) ----------
+  // ---------- Fotos que passam sozinhas (mesma velocidade do Direito Descomplica) ----------
+  // Sem cópias das fotos: ao chegar na última, espera um pouco e volta suave para a primeira.
   var auto = document.querySelector("[data-auto-trilho]");
   if (auto) {
-    // duplica as fotos para o loop infinito
-    Array.prototype.slice.call(auto.children).forEach(function (item) {
-      var copia = item.cloneNode(true);
-      copia.setAttribute("aria-hidden", "true");
-      auto.appendChild(copia);
-    });
     var autoPausado = false;
     var autoSegura = 0;
     var autoUltimo = performance.now();
     var autoAcc = 0;
-    var autoMetade = function () {
-      var it = auto.querySelectorAll(".cp-uso-card");
-      return it[it.length / 2].offsetLeft - it[0].offsetLeft;
+    var autoMax = function () { return auto.scrollWidth - auto.clientWidth; };
+    var autoEspera = function (ms) { autoSegura = performance.now() + ms; };
+    var autoVoltaInicio = function () {
+      autoEspera(1400 + 1300);
+      setTimeout(function () { auto.scrollTo({ left: 0, behavior: "smooth" }); }, 1400);
     };
     var autoTick = function (t) {
       var dt = Math.min(t - autoUltimo, 100);
@@ -115,13 +112,11 @@
         autoAcc += dt * 0.032;
         var n = Math.floor(autoAcc);
         if (n) { auto.scrollLeft += n; autoAcc -= n; }
-        var h = autoMetade();
-        if (auto.scrollLeft >= h) auto.scrollLeft -= h;
+        if (auto.scrollLeft >= autoMax() - 1) autoVoltaInicio();
       }
       requestAnimationFrame(autoTick);
     };
     requestAnimationFrame(autoTick);
-    var autoEspera = function (ms) { autoSegura = performance.now() + ms; };
     auto.addEventListener("touchstart", function () { autoEspera(60000); }, { passive: true });
     auto.addEventListener("touchend", function () { autoEspera(2500); });
     auto.addEventListener("wheel", function () { autoEspera(2500); }, { passive: true });
@@ -131,9 +126,11 @@
         var c = auto.querySelector(".cp-uso-card");
         var gap = parseFloat(getComputedStyle(auto).columnGap) || 16;
         var w = c ? c.offsetWidth + gap : 256;
-        if (d < 0 && auto.scrollLeft < w) auto.scrollLeft += autoMetade();
         autoEspera(1800);
-        auto.scrollBy({ left: d * w, behavior: "smooth" });
+        // nas pontas, a seta dá a volta: da última vai para a primeira e vice-versa
+        if (d > 0 && auto.scrollLeft >= autoMax() - 1) auto.scrollTo({ left: 0, behavior: "smooth" });
+        else if (d < 0 && auto.scrollLeft <= 1) auto.scrollTo({ left: autoMax(), behavior: "smooth" });
+        else auto.scrollBy({ left: d * w, behavior: "smooth" });
       });
     });
     var autoBtn = document.querySelector("[data-auto-pausa]");
